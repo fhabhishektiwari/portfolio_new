@@ -1,4 +1,6 @@
 import { Button } from './ui/button'
+import resumeUrl from '../Abhishek_Tiwari_frontend_developer.pdf'
+import { FileText } from 'lucide-react'
 
 export default function Hero() {
   return (
@@ -16,6 +18,11 @@ export default function Hero() {
               <a href="#projects">View Projects</a>
             </Button>
             <Button variant="outline" size="lg" asChild>
+              <a href={resumeUrl} target="_blank" rel="noopener noreferrer">
+                <FileText className="mr-2 h-4 w-4" /> Resume
+              </a>
+            </Button>
+            <Button variant="ghost" size="lg" asChild>
               <a href="#contact">Contact Me</a>
             </Button>
           </div>
